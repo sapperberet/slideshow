@@ -1,0 +1,136 @@
+footer{
+    width: 100%;
+    background-color: beige;
+    /* margin-right: 100px; */
+    color: blue;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+/* position: fixed; */
+/* position: relative; */
+position: fixed;
+font-weight: 600;
+    
+    text-align: center;
+    border:2px solid black;
+}
+
+* {box-sizing:border-box
+}
+img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    
+
+  }
+
+
+.slideshow-container {
+    padding:1px;
+    border:1px solid black;
+    background-color:black;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+h1{
+    
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: conic-gradient(#553c9a 30%, #ee4b2b 40%, #ee4b2b 70%, #00c2cb 80%, #553c9a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+  
+  body {
+    background: #33CCCC; 
+    animation: color 9s infinite linear;
+    text-align: center;
+  }
